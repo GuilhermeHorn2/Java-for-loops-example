@@ -1,0 +1,35 @@
+package project1;
+import java.util.Scanner;
+
+public class demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//int[] x = new int[4];
+		String[] names =  new String[5];
+		Scanner sc = new Scanner(System.in);//declaring the scanner
+		
+		for(int i = 0; i < names.length;i++) {
+			System.out.print("Input: ");
+			String input = sc.nextLine();//user inputing
+			names[i] = input;//input on the names list
+			if(names[i].equals("stop")) {
+				break;
+			}
+		}
+		
+		for(String x:names) {//traversing the list names
+			if(x != null) {
+				System.out.print(x);
+			}
+		}
+		
+	    
+	    
+	    
+	    
+		
+
+	}
+
+}
